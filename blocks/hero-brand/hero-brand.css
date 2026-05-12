@@ -1,0 +1,83 @@
+.hero-brand-container .hero-brand-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-brand {
+  position: relative;
+  padding: 40px 24px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.hero-brand > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-brand > div:first-child picture,
+.hero-brand > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-brand > div:last-child {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-brand h1 {
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 700;
+  color: var(--background-color);
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.hero-brand p {
+  margin: 0;
+}
+
+.hero-brand a {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border-radius: 40px;
+  padding: 8px 22px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--transition-base);
+}
+
+.hero-brand a:hover {
+  background-color: var(--accent-hover-color);
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.hero-brand.no-image {
+  background: var(--light-color);
+}
+
+.hero-brand.no-image h1 {
+  color: var(--text-color);
+  text-shadow: none;
+}
+
+@media (width >= 900px) {
+  .hero-brand {
+    padding: 48px 40px;
+    min-height: 450px;
+  }
+}

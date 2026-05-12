@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.edmundoptics.com/"],
+      "description": "Edmund Optics homepage with hero, product categories, and promotional content",
+      "blocks": [
+        {
+          "name": "cards-category",
+          "instances": [".shop-by-cat .row"]
+        },
+        {
+          "name": "hero-brand",
+          "instances": ["#bannerParent1"]
+        },
+        {
+          "name": "cards-promo",
+          "instances": ["#bannerParent2", "#bannerParent3"]
+        },
+        {
+          "name": "hero-event",
+          "instances": ["#bannerParent4"]
+        },
+        {
+          "name": "cards-product",
+          "instances": [".feat-prods .row"]
+        },
+        {
+          "name": "cards-article",
+          "instances": ["#dv-resources .row.respd:has(.card-rc)"]
+        },
+        {
+          "name": "columns-contact",
+          "instances": [".contactbanner_whitefooter .row"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Shop by Category",
+          "selector": ".shop-by-cat",
+          "style": null,
+          "blocks": ["cards-category"],
+          "defaultContent": [".shop-by-cat h2"]
+        },
+        {
+          "id": "section-2",
+          "name": "Hero Banners",
+          "selector": "section.banners",
+          "style": null,
+          "blocks": ["hero-brand", "cards-promo", "hero-event"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Featured Products",
+          "selector": "section.feat-prods",
+          "style": null,
+          "blocks": ["cards-product"],
+          "defaultContent": ["section.feat-prods h2"]
+        },
+        {
+          "id": "section-4",
+          "name": "Knowledge Center",
+          "selector": "#dv-resources",
+          "style": null,
+          "blocks": ["cards-article"],
+          "defaultContent": ["#dv-resources .homepageh1", "#dv-resources h3", "#dv-resources .btn-other"]
+        },
+        {
+          "id": "section-5",
+          "name": "Contact Banner",
+          "selector": ".contactbanner_whitefooter",
+          "style": "dark",
+          "blocks": ["columns-contact"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

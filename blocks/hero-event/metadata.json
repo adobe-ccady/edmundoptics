@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-event",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-06T21:27:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.edmundoptics.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "featured-event",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background-image + badge + title + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "featured event promotions",
+      "webinar announcements",
+      "conference marketing banners"
+    ],
+    "notSuitableFor": [
+      "simple text heroes",
+      "product feature sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T21:27:00.000Z"
+  }
+}

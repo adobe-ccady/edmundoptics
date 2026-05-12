@@ -1,0 +1,76 @@
+.hero-event-container .hero-event-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-event {
+  position: relative;
+  padding: 32px 24px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--dark-color);
+}
+
+.hero-event > div {
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+}
+
+.hero-event h1 {
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 700;
+  color: var(--background-color);
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+
+.hero-event p {
+  color: var(--background-color);
+  font-size: var(--body-font-size-s);
+  letter-spacing: 0.5px;
+}
+
+.hero-event p strong {
+  color: var(--accent-color);
+}
+
+.hero-event a.button {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border-radius: 40px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.hero-event picture {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.hero-event img {
+  object-fit: cover;
+  object-position: center right;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-event.no-image * {
+  color: var(--background-color);
+}
+
+@media (width >= 900px) {
+  .hero-event {
+    padding: 40px 32px;
+    min-height: 270px;
+  }
+
+  .hero-event > div {
+    max-width: 60%;
+  }
+}

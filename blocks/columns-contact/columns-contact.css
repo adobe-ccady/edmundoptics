@@ -1,0 +1,100 @@
+.columns-contact > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  padding: 30px 0;
+  border-top: 5px solid var(--accent-color);
+}
+
+.columns-contact > div > div {
+  color: var(--background-color);
+}
+
+.columns-contact > div > div p {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  color: var(--gray-light);
+  line-height: 1.8;
+}
+
+.columns-contact > div > div p strong {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--background-color);
+  display: block;
+  line-height: 1.4;
+}
+
+.columns-contact > div > div p strong::after {
+  content: ' \00BB';
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.columns-contact > div > div:nth-child(2) p strong::after,
+.columns-contact > div > div:nth-child(3) p strong::after {
+  content: '';
+}
+
+.columns-contact > div > div:nth-child(2),
+.columns-contact > div > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns-contact > div > div .button-wrapper {
+  margin: 0;
+}
+
+.columns-contact > div > div .button-wrapper a.button:any-link {
+  background-color: transparent;
+  border: none;
+  color: var(--background-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.columns-contact > div > div .button-wrapper a.button::after {
+  content: ' \00BB';
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.columns-contact > div > div .button-wrapper a.button:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.columns-contact > div > div p a:any-link {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.columns-contact > div > div p strong a:any-link {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.columns-contact > div > div p strong a:hover {
+  color: var(--accent-color);
+}
+
+@media (width >= 900px) {
+  .columns-contact > div {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 30px 0;
+  }
+
+  .columns-contact > div > div {
+    flex: 1;
+  }
+}

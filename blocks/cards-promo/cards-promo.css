@@ -1,0 +1,64 @@
+.cards-promo > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-promo > ul > li {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--dark-color);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border: 1px solid var(--gray-light);
+}
+
+.cards-promo .cards-promo-card-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.cards-promo .cards-promo-card-image picture,
+.cards-promo .cards-promo-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cards-promo .cards-promo-card-body {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cards-promo .cards-promo-card-body strong {
+  font-family: var(--heading-font-family);
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 700;
+  color: var(--background-color);
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: block;
+}
+
+.cards-promo .cards-promo-card-body p {
+  color: var(--background-color);
+  font-size: var(--body-font-size-m);
+  text-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+}
+
+.cards-promo .cards-promo-card-body a:any-link {
+  color: var(--background-color);
+  text-decoration: none;
+}

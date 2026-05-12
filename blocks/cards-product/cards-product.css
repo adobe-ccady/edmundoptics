@@ -1,0 +1,99 @@
+.cards-product > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cards-product > ul > li {
+  background-color: var(--background-color);
+}
+
+.cards-product > ul > li a:any-link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.cards-product > ul > li a:hover {
+  text-decoration: underline;
+}
+
+.cards-product .cards-product-card-image {
+  line-height: 0;
+  margin-bottom: 8px;
+}
+
+.cards-product .cards-product-card-body {
+  padding: 0;
+}
+
+/* TECHSPEC badge */
+.cards-product .cards-product-card-body > p:first-child em {
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+/* Top Seller badge */
+.cards-product .cards-product-card-body > p:first-child strong {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.cards-product .cards-product-card-body > p:first-child {
+  margin: 0 0 6px;
+}
+
+.cards-product .cards-product-card-body h3 {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  margin: 0 0 4px;
+  color: var(--dark-color);
+}
+
+.cards-product .cards-product-card-body > p:last-child {
+  font-size: var(--body-font-size-s);
+  color: var(--gray-medium);
+  margin: 0;
+}
+
+.cards-product > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 25px;
+  transition: transform var(--transition-base);
+}
+
+.cards-product > ul > li:hover img {
+  transform: scale(1.02);
+}
+
+@media (width >= 600px) {
+  .cards-product > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-product > ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -5,15 +5,15 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  padding: 60px 24px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
 .hero picture {
@@ -30,8 +30,41 @@
   height: 100%;
 }
 
+.hero h1,
+.hero h2,
+.hero h3 {
+  color: var(--background-color);
+  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+
+.hero p {
+  color: var(--background-color);
+  max-width: 600px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+}
+
+.hero .button-wrapper {
+  margin-top: 24px;
+}
+
+.hero a.button {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  font-weight: 600;
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+.hero a.button:hover {
+  background-color: var(--accent-hover-color);
+}
+
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    padding: 80px 32px;
+    min-height: 450px;
   }
 }

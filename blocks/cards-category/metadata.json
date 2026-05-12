@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-06T21:27:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.edmundoptics.com/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "category-navigation",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title link",
+    "buttonCount": 0,
+    "imageCount": 12
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product category grids",
+      "navigation card grids",
+      "image-with-title link collections"
+    ],
+    "notSuitableFor": [
+      "content-heavy cards with descriptions",
+      "cards requiring badges or tags"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T21:27:00.000Z"
+  }
+}

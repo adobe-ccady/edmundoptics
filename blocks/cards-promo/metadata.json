@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-06T21:27:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.edmundoptics.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "promotional-banners",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title + CTA",
+    "buttonCount": 1,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banner grids",
+      "featured content with background images",
+      "marketing call-to-action cards"
+    ],
+    "notSuitableFor": [
+      "product listing cards",
+      "text-only information cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-06T21:27:00.000Z"
+  }
+}
