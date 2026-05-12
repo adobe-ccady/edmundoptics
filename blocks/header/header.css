@@ -177,13 +177,6 @@ header nav .nav-brand img {
   height: auto;
 }
 
-header nav .nav-brand div div {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-}
-
 header nav .nav-brand div div > p:first-child {
   flex-shrink: 0;
 }
@@ -214,8 +207,47 @@ header nav .nav-brand div div > p:nth-child(4) {
   font-size: var(--body-font-size-s);
 }
 
+header nav .nav-brand div div,
+header nav .nav-brand .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+header nav .nav-brand .default-content-wrapper > p:first-child {
+  flex-shrink: 0;
+}
+
+header nav .nav-brand .default-content-wrapper > p:nth-child(2) {
+  flex: 1;
+  background-color: rgb(255 255 255 / 10%);
+  border: 1px solid var(--gray-medium);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  color: var(--gray-light);
+  cursor: text;
+  display: none;
+}
+
+header nav .nav-brand .default-content-wrapper > p:nth-child(3) {
+  flex-shrink: 0;
+  font-weight: 500;
+  font-size: var(--body-font-size-s);
+  margin-left: auto;
+}
+
+header nav .nav-brand .default-content-wrapper > p:nth-child(4) {
+  flex-shrink: 0;
+  font-weight: 500;
+  font-size: var(--body-font-size-s);
+}
+
 @media (width >= 900px) {
-  header nav .nav-brand div div > p:nth-child(2) {
+  header nav .nav-brand div div > p:nth-child(2),
+  header nav .nav-brand .default-content-wrapper > p:nth-child(2) {
     display: block;
   }
 }
@@ -362,7 +394,8 @@ header nav .nav-tools {
   gap: 12px;
 }
 
-header nav .nav-tools div div {
+header nav .nav-tools div div,
+header nav .nav-tools .default-content-wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -376,7 +409,9 @@ header nav .nav-tools a:any-link {
 
 @media (width < 900px) {
   header nav .nav-tools div div > p:nth-child(1),
-  header nav .nav-tools div div > p:nth-child(2) {
+  header nav .nav-tools div div > p:nth-child(2),
+  header nav .nav-tools .default-content-wrapper > p:nth-child(1),
+  header nav .nav-tools .default-content-wrapper > p:nth-child(2) {
     display: none;
   }
 }
